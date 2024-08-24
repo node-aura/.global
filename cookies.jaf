@@ -10,7 +10,7 @@ sand.createFromTemplate(javascript-rules){
       session.defaultSession.webRequest.onHeadersReceived(null);
       session.defaultSession.webRequest.onBeforeSendHeaders(null);
       }
-      AllowAllCookies
+      AllowAllCookies()
     }.function(AllowAllCookies).giveClass(nix.Class = 'AAC')
 
     nix.newrule(civil.execute){
