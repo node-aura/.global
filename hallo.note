@@ -1,0 +1,13 @@
+Jaf files known to TeamEra as JustAFrog scripts are simple script capable to do anything that other programming languages can, this language is capable of running everywhere, sintax is very flexible and it supports ALL programming languages
+
+tips:
+--this a note line, all of this line is a note
+-this is a closed note-
+
+you must import sand, bacause it's the main module, you can't do much without it
+to encrypt, protect or insolate script use cook module
+to run a script in a especific way use ATOMIC module
+to apply rules on especific lines or scripts use civil module
+to import you favorite language and use it in the code put "requre = name_of_the_language_or_abreviation"
+
+
