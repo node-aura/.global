@@ -1,0 +1,25 @@
+require = min / civil / cook
+require = ATOMIC
+require = sand( $strings & invert.all)
+
+ATOMIC.function(sg){
+
+  sand.get($strings)
+  sand.getTemplate(sand/templates/@strings).apply.this
+  sand.get($strings).this(prefix = 'sg').This
+
+  sg.newString(cookingGood){
+    -sg.cl=%d%t / sg.tr$$.th%s / s!nd.c?mpl$%.!ll
+    -sg.l%nk / v!l$=?n=ll
+    -sg.tr$$t / v!l$=!60
+    -sg.cr%yp / c??k.th%s / c??k.g$tTyp$(fly,2048,random)
+    -sg.c??k.th%s
+  }
+
+  cook(sg.cookingGood).getType(anfly,0,symbols,anomalous)
+  }
+
+  ATOMIC.function(sg).executeAndExport
+
+  min.lines(-20).exportAs(sand.modules).getName(sand.this = '20string')
+
