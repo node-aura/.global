@@ -1,6 +1,7 @@
 require = html / css / javascript
-require = min / civil / standard
-require = cook / format / sand
+require = min / civil 
+require-file = ./strings.jaf
+require = cook / sand
 
 sand.createFromTemplate(javascript-rules){
   sand.inFunction.this(prefix = 'nix').to(sand.template(javascript-rules).onThis))
