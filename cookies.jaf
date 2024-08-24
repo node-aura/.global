@@ -23,6 +23,9 @@ sand.createFromTemplate(javascript-rules){
 
   sand.execute.nnj & min.whenStarted.Asap
 
+sand.modules('20string').applyToAll(nix.scripts)
+cook(sand.modules('20string')).getType(direct,0,nonothing) % cook.thisLine = cook.getName(sand.ThisLine = 'longline'), cook.longline.executeDirectly
+
 
 
   
