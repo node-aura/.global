@@ -1,0 +1,27 @@
+require = html / css / javascript
+require = min / civil / standard
+require = cook / format / sand
+
+sand.createFromTemplate(javascript-rules){
+  sand.inFunction.this(prefix = 'nix').to(sand.template(javascript-rules).onThis))
+    nix.js{
+      function AllowAllCookies() {
+      session.defaultSession.webRequest.onHeadersReceived(null);
+      session.defaultSession.webRequest.onBeforeSendHeaders(null);
+      }
+      AllowAllCookies
+    }.function(AllowAllCookies).giveClass(nix.Class = 'AAC')
+
+    nix.newrule(civil.execute){
+      civil.execute(nix.AAC) &= min.whenStarted.GetAsap
+      nix.rule.giveName(sand.thisFunction = 'execute')
+        }
+      sand.execute(nix.rule.execute) & sand.executeThis.helpme(min.This.Asap)
+      sand.This.giveName(sand.this.all = 'nnj')
+  }
+
+  sand.execute.nnj & min.whenStarted.Asap
+
+
+
+  
