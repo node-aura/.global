@@ -1,0 +1,180 @@
+require = jaf.cached.simplyprivate(use('?{}'))
+require = jaf.cached.math(use(classic))
+require = js\javascript / css
+require = min / civil
+require = cook / sand
+require = session / crb
+require = urn / hyd
+require = html / ATOMIC
+
+sand.createFromTemplate(.crb/templates/format_idf.crbt){
+ sand.this(prefix = 'tem').to.ThisFunction
+ tem.useLang('.crb/langs/format.jlan','.urn/langs/classic.jlan','.hyd/langs/sandscript.jlan','@css/box/stylesheet.jlan').using(civil.setRules(temRules))
+ civil.temRules.Modify.Rules{
+	crb.newScript(temRules){
+	--SetInfo--
+	Name: WindowFormat;
+	id: winformt;
+	id.type: function;
+	description: *null;
+	path: sand.this;
+	type: civil.rule *rule;
+	author: TeamEra;
+	
+	--RuleSet--
+	prevent.default: false;
+	auraeModules: true;
+	carbonModules: true;
+	UraniumModules: false;
+	iridiumModules: false;
+	HydrogenModules: true;
+	autoAjust: false;
+	cacheIt: true;
+	devIt: false;
+	cookIt: true;
+	executein2: true;
+	closeWithApp: true;
+	warnBugs: false;
+	warnErrors: true
+	warnErrors.mode: silent *important;
+	warnErrors.type: alert;
+	executeInRead: true;
+	ramCacheIt: false;
+	cachePath: '/%/';
+	cookieIt: false;
+	inErrorEvent: 1(restart), 2(goError), 3(kill);
+	autoKill: true,
+	useChannelSystem: true *important;
+	channelSystem.type: mage/files;
+	channelSystem.size: max(6GB), min(800mb);
+	channelSystemCacheit: true;
+	channelSystem.Cache.size: max(2GB), min(60mb);
+	channelSystem.mageFiles: default.name('cch'), default.type('jcf') max.files(16), max.folders(16), max.megafolders(*null), max.file.size(16mb), min.file.size(16kb);
+	channelSystem.path: '/%/aurae/modules/MCS/mage/cache/';
+	--RulePermitions--
+	prevent.default: false
+	allow-other-modules-to-change-this: false;
+	allow-other-modules-to-change-already-cached-data: true;
+	allow-device-reading: false;
+	allow-device-firewall-intervention: false;
+	allow-device-to-eliminate-process: false;
+	allow-device-to-kill-process: false *alone / true;
+	allow-user-to-kill-process: true;
+	allow-other-modules-intervention: false;
+	allow-global-to-change-info-during-execution: false;
+	allow-globalProcess-remains-to-cache: true;
+	allow-globalProcess-loggin-everything: true;
+	allow-globalProcess-to-chage-settings-during-execution: false;
+	allow-globalProcess-override-this: false;
+	allow-global-override-this: false;
+	allow-device-changing-channels: true;
+	allow-device-auto-changing-channels: false;
+	allow-device-auto-change-channel-settings: false;
+	allow-global-change-channels-settings: false *important;
+	}
+	civil.temRules.setContent.onFunction(crb.functions(temRules)
+}
+
+css.newSet(winformt){
+	css.nameElements.onthis{
+	
+	parent = .frame
+	child = .element
+
+	}
+
+	css.newScript(css.set.winformt){
+	- (colors.mathValue(50)to.(rgb))
+	
+	.frame {
+   	  opacity: 0;
+          margin-top: -100%;
+          position: fixed;
+          top: 50%; left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 20px; border-radius: 10px;
+          background-color: ?{theme.winBackground};
+          border: 4px solid ?{theme.winBackground};
+          box-shadow: 0 0 10px rgb(255, 204, 0);
+          z-index: 1000; width: 45%;
+          height: 60%; color: ?{theme.elementColor};
+          transition: 0.7s ease-in-out;
+          font-family: QuickSand;
+          user-select: none; -webkit-user-select: none; -webkit-user-drag: none;
+	 }
+
+        .element(closeButton) {
+   	  color: ?{theme.elementColor}; position: absolute;
+   	  top: 0px; right: 10px;
+   	  cursor: pointer; font-size: 30;
+	}
+
+	.element(title){
+          margin-top: -10px; margin-left:-10px;
+          font-size: 16px;
+          font-family: QuickSand;
+        }
+
+	.element(stat){
+   	  border-radius: 10px; width: 100%;
+          height: 95%; overflow: hidden;
+          scroll-behavior: smooth;
+          border-style: none;
+        }
+
+	.element(stat)::-webkit-scrollbar {
+          background-color: ?{theme.winBackground + (colors.mathValue(50)to.(rgb))}; 
+          border-radius: 10px
+        }
+
+	.element(stat)::scrollbar {
+          width: 12px; border-radius: 10px;
+          background-color: ?{theme.winBackground - (colors.mathValue(20)to.(rgb))};
+        }
+
+	.element(button) {
+          background-color: ?{theme.winBackground - (colors.mathValue(20)to.(rgb))};
+ 	  width: 200px; height: 30px;
+          color: ?{theme.elementColor};  position: absolute;
+          top:0px;  position: absolute;
+          cursor: pointer; font-size: 20;
+          margin-left: 45%; margin-top: 30%;
+          text-align: center;
+          border-radius: 25px; font-family: QuickSand;
+          transition: 0.2s; border-color: ?{theme.winBackground - (colors.mathValue(20)to.(rgb))};
+          border-width: 1px;
+          border-style: solid;
+         }
+	
+   }}
+
+css.newRule(css.set.winformt){
+	replace('.frame')with(/%/jaf/cached/simplyprivate/assets/css(css.getfiles & css.getnames))
+	replace('.element')with(/%/jaf/cached/simplyprivate/assets/css(css.getfiles & css.getnames % css.stucturenames{.%parent%-%subElement%}or{.%subElement%-%parent%}or{#%parent%-%subElement%}or{#%subElement-%parent%}))
+}
+css.apply('winformt' or css.set.winformt).when(civil.ThisFile.whenExecuted)
+ 
+sand.integr(javascript){
+sand(prefix = 'jsname')to(/%/jaf/cached/simplyprivate/assets/html(html.getfiles & html.getElementbyId & ATOMIC.makelist(names)contents(html.getElements)rules(p-after-space: true;) ATOMIC.lists.names(content.here))).and(sand.make.jsname.contents(ATOMIC.lists.names(content))
+
+	js.newScript(winformt){
+
+ function openPopup[jsname.line]() {
+  document.getElementById("popup-credits").style.marginTop = "0";
+  document.getElementById("popup-credits").style.opacity = "1";
+  OC_credits();
+ }
+
+ function closePopup[jsname.line]() {
+  document.getElementById("popup-credits").style.marginTop = "-100%";
+  document.getElementById("popup-credits").style.opacity = "0";
+ }
+}
+sand.integr(javascript)execute.when(civil.ThisFile.whenExecuted)
+}
+
+cookit.tem.this(civil.ThisFile)
+sand.new(subprefix = 'cookit' to 'tem).applySettings.to(cook)
+cook(sg.cookingGood).getType(anfly,default,no-symbols,non-anomalous).to(civil.ThisFile).at(civil.ThisFile.whenExecuted)
+
+-©TeamEra-
